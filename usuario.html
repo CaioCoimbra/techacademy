@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Tech Academy</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tech Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-contents">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                        </li>
+                        <span id="usuario"> <!--APENAS APARECER CASO O USUARIO NÃO ESTEJA LOGADO. SE ESTIVER TROCAR PARA-->
+                            <img src="img/icons/perfil.svg" class="card-img-top" alt="...">
+                            <li class="nav-item">
+                                <a class="nav-link active user" aria-current="page" href="cadastro.html">Caio Coimbra</a>
+                            </li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <div>
+              <figure class="figure" style="display: contents;">
+                 <iframe src="\img\path\logo.html" width="100%" height="500px" style="overflow-y: none;" scrolling="no"></iframe>
+              </figure>
+            </div>
+            <div id="sobre">
+                <h2>Aprenda Programação!</h2>
+                <h4 class="text-body-secondary">Domine as principais linguagens do mercado.</h4> <br>
+                <p>As linguagens de programação são a base do desenvolvimento de softwares, aplicativos e sistemas inovadores. Em um site de cursos de tecnologia, você pode aprender desde as mais populares, como Python, JavaScript e Java, até as mais especializadas, como Rust e Go. Cada linguagem tem suas particularidades e aplicações, permitindo que você escolha a que melhor se adapta aos seus objetivos profissionais. <br> <br>
+                Com materiais didáticos interativos, exercícios práticos e projetos reais, os cursos online proporcionam um aprendizado dinâmico e eficiente. Seja para iniciar na programação ou aprimorar suas habilidades, dominar novas linguagens abre portas para oportunidades em diversas áreas da tecnologia, como desenvolvimento web, mobile, inteligência artificial e segurança digital.</p>
+            </div>
+        </section>
+        <span id="tit-cursos" style="padding: 2% 0 0;">
+            <h1>Cursos</h1>
+        </span>
+        <section id="cursos">
+            <div class="card" style="width: 20rem;">
+                <img src="/img/cursos/js.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%">75%</div>
+                  </div> <br> 
+                  <h5 class="card-title">Javascript</h5>
+                  <p class="card-text">JavaScript é essencial para o desenvolvimento web, permitindo a criação de sites interativos e dinâmicos.</p>
+                  <a href="#" class="btn btn-primary">Ir ao curso</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="/img/cursos/python.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%">50%</div>
+                  </div> <br> 
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">Python é famosa por sua simplicidade e versatilidade, sendo muito utilizada em áreas como ciência de dados, inteligência artificial e automação.</p>
+                  <a href="#" class="btn btn-primary">Ir ao curso</a>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="/img/cursos/java.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%">25%</div>
+                  </div> <br> 
+                  <h5 class="card-title">Java</h5>
+                  <p class="card-text"> Java é conhecida pela sua robustez e é comumente usada no desenvolvimento de aplicativos empresariais e sistemas Android.</p>
+                  <a href="#" class="btn btn-primary">Ir ao curso</a>
+                </div>
+              </div>
+        </section>
+        <section id="feedback">
+            <h1>Feedback</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 feedback">
+                    <img src="/img/icons/perfil.svg" class="card-img-top col-md-auto" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lucas Almeida</h5>
+                      <p class="card-text"><i>"Os cursos são muito bem estruturados e fáceis de acompanhar. Aprendi JavaScript do zero e já estou desenvolvendo meus próprios projetos!"</i></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 feedback">
+                    <img src="/img/icons/perfil.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mariana Costa</h5>
+                      <p class="card-text"><i>"A plataforma é intuitiva e os instrutores explicam de forma clara. O curso de Python me ajudou a conseguir minha primeira vaga na área de tecnologia!"</i></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 feedback">
+                    <img src="/img/icons/perfil.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Roberto Silva</h5>
+                      <p class="card-text"><i>"Conteúdo atualizado e prático! Fiz o curso de inteligência artificial e agora consigo aplicar machine learning nos meus projetos."</i></p>
+                    </div>             
+                  </div>
+                </div>
+              </div>    
+        </section>
+
+    </main>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 Tech Academy, Inc</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
